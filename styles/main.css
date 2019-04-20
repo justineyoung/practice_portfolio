@@ -1,0 +1,56 @@
+body {
+  padding-bottom: 5rem;
+}
+
+header {
+  background: url(/images/fantasy-image.jpg) center / cover;
+  height: 60vh;
+  justify-content: center;
+  text-align: left;
+}
+/* this CSS rule set targets a <header> tag with a <portfolio-header> ID */
+/* 60vh is 60% of the viewport height */
+
+h1 {
+  font-weight: bold;
+  /* color: rgba(234, 20, 91, 0.9); */
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+.slogan{
+  font-weight: lighter;
+  /* color: rgba(234, 20, 91, 0.8); */
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 1.6rem;
+}
+
+main {
+  max-width: 900px;
+}
+
+.project-description {
+  padding-left: 0;
+}
+
+.project img{
+  width: 100%;
+}
+
+footer.mdl-mini-footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1; /*elements with higher z numbers will cause element to appear in front*/
+  padding: 0.5rem;
+}
+
+footer.mdl-mini-footer > ul {
+  margin: auto;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header.mdl-layout__header {
+    display: flex;
+  }
+}
